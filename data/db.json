@@ -1,0 +1,21 @@
+{
+    "cidades":[
+        {
+            "nome": "Rio de Janeiro",
+            "id":1
+        },
+        {
+            "nome": "Niteroi",
+            "id":1
+        },
+        {
+            "nome": "Nova Iguaçu",
+            "id":1
+        }
+
+    ]
+
+
+
+
+}

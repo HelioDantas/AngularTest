@@ -1,0 +1,26 @@
+<form #usuarioForm = "ngForm" (ngSubmit) = 'salva(usuarioForm)'>
+  {{cliente | json}}
+  <div class="alert alert-danger" *ngIf = 'usuarioForm.invalid'>
+    Prencha Todos os campos
+
+  </div>
+  <fieldset >
+    <div class="form-group">
+      <label for="disabledTextInput">Nome</label>
+      <input type="text" id="disabledTextInput" class="form-control" name = 'nome'  placeholder="" [(ngModel)] = 'cliente.nome' required minlength="10">
+    </div>
+    <div class="form-group">
+      <label for="disabledTextInput">Email</label>
+      <input type="email" id="disabledTextInput" class="form-control" name = 'email' placeholder="" [(ngModel)] = 'cliente.email' required email> 
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect">Profissão</label>
+      <select id="disabledSelect" class="form-control" name = 'profissao' [ngModel] = "'analista'" [(ngModel)] = 'cliente.profissao'>
+        <option value = ''>Selecione</option>
+        <option *ngFor = 'let profissao of profissoes'>{{profissao}}</option>
+       </select>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" [disabled] = '!usuarioForm.valid'>Submit</button>
+  </fieldset>
+</form>
