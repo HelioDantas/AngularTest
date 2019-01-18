@@ -19,14 +19,14 @@ export class CidadesFormComponent implements OnInit  {
   }
 
   create(cidadeForm: NgForm){
+
     this.cidadeService.create({nome: cidadeForm.value.nome})
     .then(cidade => {
       this.cidade =  cidade;
       this.Cidadecadastrada.emit(this.cidade)
       this.cidade =  cidade;
+      this.cadastrado = true;
     });
-    this.cadastrado = true;
-    console.log(this.cidade);
   }
 
 
