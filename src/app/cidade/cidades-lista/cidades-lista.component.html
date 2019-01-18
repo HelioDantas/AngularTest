@@ -4,12 +4,14 @@
     <tr>
       <th scope="col">id</th>
       <th scope="col">nome</th>
+      <th scope="col">delete</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let cidade of cidades">
-      <th scope="row">{{cidade.id}}</th>
+      <th scope="row" >{{cidade.id}}</th>
       <td>{{cidade.nome}}</td>
+      <button class="btn btn-danger" (click) = delete(cidade.id)>delete</button>
     </tr>
   </tbody>
 </table>

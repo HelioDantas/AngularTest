@@ -1,11 +1,17 @@
-<form #cidadeForm = "ngForm" (ngSubmit) = 'create(cidadeForm)'>
+<form #cidadeForm = "ngForm" (ngSubmit) = 'create(cidadeForm)' class="form-inline">
+
   <div *ngIf = 'cadastrado === true' class = "alert alert-success">{{ cidade.nome }} cadastrada</div>
   <fieldset >
-    <div class="form-group">
+      <div class="row ">
+    <div class="form-group col-auto">
       <label for="disabledTextInput">Nome</label>
       <input type="text" id="disabledTextInput" class="form-control" name = 'nome'  placeholder="" ngModel required minlength="3">
     </div>
 
-    <button type="submit" class="btn btn-primary" >Submit</button>
+     <button type="submit" class="btn btn-primary" >Submit</button>
+
+  </div>
   </fieldset>
+
 </form>
+<br>

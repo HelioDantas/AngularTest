@@ -21,4 +21,13 @@ export class CidadesListaComponent implements OnInit {
         });
 
   }
+  delete(id:number){
+
+    this.cidadeService.delete(id)
+    .then( () =>{
+      this.lista()
+    })
+
+    console.log(id);
+  }
 }

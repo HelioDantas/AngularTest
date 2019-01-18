@@ -25,4 +25,9 @@ export class CidadeService {
     .then(Response => Response);
 
   }
+  delete(id: number){
+    return this.http.delete(this.cidadesURL +'/'+id)
+    .toPromise()
+    .then(() => null);
+  }
 }
