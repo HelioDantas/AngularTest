@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CidadeService } from './cidade.service';
+import { CidadeService } from './cidade/cidade.service';
 
 describe('CidadeService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

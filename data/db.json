@@ -1,21 +1,36 @@
 {
-    "cidades":[
-        {
-            "nome": "Rio de Janeiro",
-            "id":1
-        },
-        {
-            "nome": "Niteroi",
-            "id":1
-        },
-        {
-            "nome": "Nova Iguaçu",
-            "id":1
-        }
-
-    ]
-
-
-
-
+  "cidades": [
+    {
+      "nome": "Rio de Janeiro",
+      "id": 1
+    },
+    {
+      "nome": "Niteroi",
+      "id": 2
+    },
+    {
+      "nome": "Nova Iguaçu",
+      "id": 3
+    },
+    {
+      "nome": "Duque de Caxias",
+      "id": 4
+    },
+    {
+      "nome": "Macaé",
+      "id": 5
+    },
+    {
+      "nome": "sdsds",
+      "id": 6
+    },
+    {
+      "nome": "kjnjn",
+      "id": 7
+    },
+    {
+      "nome": "sdsdsd",
+      "id": 8
+    }
+  ]
 }

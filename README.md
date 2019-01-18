@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Digite o comando abaixo para installar as depencias da aplicação
+npm install
+
+Apos isso digite o comando abaixo para start o servidor 
+json-server --watch data/db.json
+Apos isso  digite no browser a url https://localhost:3000/cidades
+
+Apos isso abrar outro pront e digite o comadno abaixo para startar sua aplicação
+ng serve
+
+Primeiro instale o json-server para emular o backend REST
+ npm install -g json-server
+
+

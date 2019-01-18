@@ -1,15 +1,15 @@
+<app-cidades-form (Cidadecadastrada) = 'lista()'></app-cidades-form>
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">id</th>
       <th scope="col">nome</th>
-
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let cidade of cidades">
       <th scope="row">{{cidade.id}}</th>
-      <td>{{cidade.nome}}k</td>  
+      <td>{{cidade.nome}}</td>
     </tr>
   </tbody>
 </table>
