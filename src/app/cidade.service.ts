@@ -7,9 +7,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CidadeService {
+  // https://servicodados.ibge.gov.br/api/v1/localidades/mesorregioes
   cidades = 'http://localhost:3000/cidades';
   configUrl = 'assets/config.json';
-  // [{ nome: 'Rio de Janeiro', id: 1}, { nome: 'Rio de Janeiro', id: 1}];
+
 
   constructor(private http: HttpClient) { }
 
