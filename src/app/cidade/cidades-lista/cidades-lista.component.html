@@ -2,16 +2,18 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">id</th>
-      <th scope="col">nome</th>
-      <th scope="col">delete</th>
+      <th scope="col-auto">id</th>
+      <th scope="col-auto">nome</th>
+      <th scope="col-auto">update</th>
+      <th scope="col-auto">delete</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let cidade of cidades">
       <th scope="row" >{{cidade.id}}</th>
-      <td>{{cidade.nome}}</td>
-      <button class="btn btn-danger" (click) = delete(cidade.id)>delete</button>
+      <td><div class="input-group"><input type="text" class= "form-control-plaintext" [(ngModel)] ='cidade.nome'></div></td>
+      <td> <button class="btn btn-success" (click) = update(cidade)>update</button></td>
+      <td> <button class="btn btn-danger" (click) = delete(cidade.id)>delete</button></td>
     </tr>
   </tbody>
 </table>

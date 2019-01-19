@@ -30,4 +30,12 @@ export class CidadesListaComponent implements OnInit {
 
     console.log(id);
   }
+
+  update(cidade:any){
+    this.cidadeService.update(cidade)
+    .then(() =>{
+      this.lista();
+    })
+
+  }
 }

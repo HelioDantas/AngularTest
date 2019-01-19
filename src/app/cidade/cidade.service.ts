@@ -30,4 +30,13 @@ export class CidadeService {
     .toPromise()
     .then(() => null);
   }
+
+  update(cidade: any){
+    return this.http.put(this.cidadesURL +'/' + cidade.id, cidade)
+    .toPromise()
+    .then(Response => Response);
+
+
+
+  }
 }
