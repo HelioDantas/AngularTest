@@ -17,24 +17,31 @@ export class CidadeService {
   lista() {
     return this.http.get(this.cidadesURL)
     .toPromise()
-    .then(Response => Response);
+    .then(Response => Response)
+    .catch(Response =>alert('O back não que trabalhar :('))
+
   }
   create(cidadeNome: any){
     return this.http.post(this.cidadesURL, cidadeNome)
     .toPromise()
-    .then(Response => Response);
+    .then(Response => Response)
+    .catch(Response =>alert('O back não que trabalhar :('))
+
 
   }
   delete(id: number){
     return this.http.delete(this.cidadesURL +'/'+id)
     .toPromise()
-    .then(() => null);
+    .then(() => null)
+    .catch(Response =>alert('O back não que trabalhar :('))
+
   }
 
   update(cidade: any){
     return this.http.put(this.cidadesURL +'/' + cidade.id, cidade)
     .toPromise()
-    .then(Response => Response);
+    .then(Response => Response)
+    .catch(Response =>alert('O back não que trabalhar :('))
 
 
 
